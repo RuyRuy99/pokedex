@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', cursive;
+}
+
+body{
+    text-align: center;/*Centraliza no meio da pagina*/
+    background: linear-gradient(to bottom,red,purple);/*Degradê*/
+    min-height: 100vh;/*Vai esticar o body*/
+}
+
+main{
+    display: inline-block;/*Largura da tag main == tamanho da imagem*/
+    margin-top: 2%;/*Dá uma afastada do topo da tela*/
+    padding: 15px;/*Quando a tela tiver pequena não ficar muito curto na tela*/
+    position: relative;/*Elementos respeitam as delimitações da TAG main*/
+}
+
+.pokedex{
+    width: 100%;/*Diminuir conforme Zoom ou 100% da tag, que é da imagem*/
+    max-width: 425px;
+
+}
+
+.poke_img{
+    position: absolute;/*Agora pode posicionar o GIF*/
+    bottom: 55%;/*Não colocar valore relativo pq se diminuir a tela o valor absoluto vai permanecer o mesmo*/
+    left: 50%;
+    transform: translate(-63%,20%);/*Move a centralidade do GIF(n da div) conforme pag diminui*/
+    height: 18%;/*Altura do pokemon*/
+}
+
+.poke_data{
+    position: absolute;/*Para ficar dentro da TAG  Main*/
+    font-size: clamp(8px,125%,25px);/*min,desejavel,max*/
+    font-weight: 100;/*Fonte menos negrito*/
+    color: grey;
+    top: 54.5%;
+    right: 27%;
+}
+
+.poke_name{
+    color: black;
+    text-transform: capitalize;
+}
+
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+
+}
+
+.input_search{
+    width: 100%;
+    padding: 4%;
+    outline: none;/*Tira o azul da caixa de input*/
+    border: 2px solid black;
+    border-radius: 5px;/*Bordas arredondadas*/
+    font-weight: 600;
+    color: black;
+    font-size: clamp(8px,125%,1rem);
+    box-shadow: -3px 4px 0 #888, -5px 6px 0 black;/*Sombra da box*/
+
+}
