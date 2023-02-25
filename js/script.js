@@ -36,16 +36,17 @@ const renderPokemon = async (pokemon) => {
 
     if (dados){
         //console.log(dados.name);
+        poke_img.style.display = 'block'//precisa colocar displat block porque ele tava none, e ele não volta depois
         poke_name.innerHTML = dados.name;
         poke_number.innerHTML = dados.id
-        poke_img.src = dados['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']//pode usar "." ou "[]"
+        poke_img.src = dados['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny'];//pode usar "." ou "[]"
         input.value = '';
         searchPokemon = dados.id//para ele não perder a referência do último pokemon
     }
     else{
         poke_img.style.display = 'none'
         poke_name.innerHTML = "Not Found";
-        poke_number = '';
+        poke_number.innerHTML = '';
 
     }
 }
@@ -74,10 +75,6 @@ buttonNext.addEventListener('click',() => {
     renderPokemon(searchPokemon)
 
 });
-
-
-
-
 
 
 
