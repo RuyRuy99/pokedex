@@ -1,1 +1,3 @@
-Minha Pokedex
+Este foi meu primeiro projeto usando as tecnologias HTML, CSS e JS.
+Ainda pretendo mexer nele e colocar mais algumas funcionalidades.
+Pretendo também utilizar outras linguagens como Python, Java ou Ruby, apenas pelo aprendizado...
