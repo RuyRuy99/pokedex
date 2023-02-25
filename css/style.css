@@ -53,7 +53,6 @@ main{
     width: 65%;
     top: 65%;
     left: 13.5%;
-
 }
 
 .input_search{
@@ -66,5 +65,31 @@ main{
     color: black;
     font-size: clamp(8px,125%,1rem);
     box-shadow: -3px 4px 0 #888, -5px 6px 0 black;/*Sombra da box*/
+}
 
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%,0);
+    display: flex;/*Botões um do lao do outro*/
+    gap: 20px;/*Quanto vai ficar separado*/
+}
+
+.button{
+    width: 50%;/*Espaço entre os botões*/
+    padding: 4px;
+    border: 2px solid black;
+    font-size: clamp(8px,125%,1rem);
+    color: white;
+    font-weight: 600;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px black;
+}
+
+.button:active{
+    /*Quando o botão for ativado/*/
+    box-shadow: inset -4px 4px #222;/*Simula o botão entrando*/
+    font-size: 0.9rem;
 }
